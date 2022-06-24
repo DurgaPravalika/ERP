@@ -26,6 +26,7 @@ public class Invaliddata {
         
         //TC4 verify reset button is working or not
         driver.findElement(By.id("btnreset")).click();
+        System.out.println("Invalid data");
         String name=driver.findElement(By.id("username")).getAttribute("value");
         System.out.println(name);
         String pwd=driver.findElement(By.id("password")).getAttribute("value");
